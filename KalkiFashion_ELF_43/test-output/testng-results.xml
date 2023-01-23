@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Empty Chrome Browser is launched Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser Window is maximized]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-01-23T10:31:50 IST" name="Default suite" finished-at="2023-01-23T10:32:08 IST" duration-ms="18070">
+    <groups>
+    </groups>
+    <test started-at="2023-01-23T10:31:50 IST" name="Default test" finished-at="2023-01-23T10:32:08 IST" duration-ms="18070">
+      <class name="org.automation.addToCart.TC_Kalki_AddToCart_084Test">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_084Test@3c407114]" started-at="2023-01-23T10:31:50 IST" name="browserSetup" finished-at="2023-01-23T10:31:56 IST" duration-ms="6765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Empty Chrome Browser is launched Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Browser Window is maximized]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_084Test@3c407114]" started-at="2023-01-23T10:31:56 IST" name="clickOnimageDescription" finished-at="2023-01-23T10:32:07 IST" duration-ms="10545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnimageDescription -->
+        <test-method is-config="true" signature="browserTermination()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_084Test@3c407114]" started-at="2023-01-23T10:32:07 IST" name="browserTermination" finished-at="2023-01-23T10:32:08 IST" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTermination -->
+      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_084Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
