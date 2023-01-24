@@ -1,5 +1,4 @@
 package org.automation.addToCart;
-// TC_Kalki_AddToCart_081Test:  Verify user is able is click on the image description available on Kids odule page.
 
 import java.util.Set;
 
@@ -13,7 +12,15 @@ import org.testng.annotations.Test;
 
 public class TC_Kalki_AddToCart_084Test extends KalkiFashionBaseClass {
 
-	@Test
+	/***
+	 * TC_Kalki_AddToCart_084Test: Verify user is able is click on the image
+	 * description available on Kids module page.
+	 * 
+	 * @author Rohit
+	 * 
+	 * @throws InterruptedException
+	 */
+	@Test(groups = "functionality")
 	public void clickOnimageDescription() throws InterruptedException {
 		// Step 1: Go on Homepage...
 		BasePage basepage = new BasePage(driver);

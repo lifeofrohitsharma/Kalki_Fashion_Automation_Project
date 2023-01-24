@@ -7,13 +7,19 @@
     <line>
       <![CDATA[Browser Window is maximized]]>
     </line>
+    <line>
+      <![CDATA[Product added to Shopping cart succesfully]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-01-23T10:31:50 IST" name="Default suite" finished-at="2023-01-23T10:32:08 IST" duration-ms="18070">
+  <suite started-at="2023-01-24T16:57:44 IST" name="Default suite" finished-at="2023-01-24T16:58:28 IST" duration-ms="44126">
     <groups>
+      <group name="system">
+        <method signature="TC_Kalki_AddToCart_089Test.clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_089Test@3c407114]" name="clickOnimageDescription" class="org.automation.addToCart.TC_Kalki_AddToCart_089Test"/>
+      </group> <!-- system -->
     </groups>
-    <test started-at="2023-01-23T10:31:50 IST" name="Default test" finished-at="2023-01-23T10:32:08 IST" duration-ms="18070">
-      <class name="org.automation.addToCart.TC_Kalki_AddToCart_084Test">
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_084Test@3c407114]" started-at="2023-01-23T10:31:50 IST" name="browserSetup" finished-at="2023-01-23T10:31:56 IST" duration-ms="6765" status="PASS">
+    <test started-at="2023-01-24T16:57:44 IST" name="Default test" finished-at="2023-01-24T16:58:28 IST" duration-ms="44126">
+      <class name="org.automation.addToCart.TC_Kalki_AddToCart_089Test">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_089Test@3c407114]" started-at="2023-01-24T16:57:44 IST" name="browserSetup" finished-at="2023-01-24T16:57:49 IST" duration-ms="4949" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,15 +36,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_084Test@3c407114]" started-at="2023-01-23T10:31:56 IST" name="clickOnimageDescription" finished-at="2023-01-23T10:32:07 IST" duration-ms="10545" status="PASS">
+        <test-method signature="clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_089Test@3c407114]" started-at="2023-01-24T16:57:49 IST" name="clickOnimageDescription" finished-at="2023-01-24T16:58:28 IST" duration-ms="38650" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Product added to Shopping cart succesfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- clickOnimageDescription -->
-        <test-method is-config="true" signature="browserTermination()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_084Test@3c407114]" started-at="2023-01-23T10:32:07 IST" name="browserTermination" finished-at="2023-01-23T10:32:08 IST" duration-ms="708" status="PASS">
+        <test-method is-config="true" signature="browserTermination()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_089Test@3c407114]" started-at="2023-01-24T16:58:28 IST" name="browserTermination" finished-at="2023-01-24T16:58:28 IST" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTermination -->
-      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_084Test -->
+      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_089Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

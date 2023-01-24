@@ -46,7 +46,7 @@ public class KalkiFashionBaseClass {
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(ReadData.fromPropertyFile("expectedTitle"), actualTitle, "Home page is not displayed");
 		js = (JavascriptExecutor) driver;
-
+		explicitWait = new WebDriverWait(driver, 15);
 	}
 
 	@AfterClass

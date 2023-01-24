@@ -8,9 +8,18 @@ import org.automation.genricLibrary.ReadData;
 import org.testng.Assert;
 import org.testng.Reporter;
 
-public class SignIn_Page_082Test extends KalkiFashionBaseClass {
+public class SignIn_Page_085Test extends KalkiFashionBaseClass {
 
-	@Test
+	/***
+	 * SignIn_Page_085Test: verify that user is able to click on the signup link
+	 * button or not.
+	 * 
+	 * @author Rohit
+	 * 
+	 * @throws Exception
+	 */
+
+	@Test(groups = "functionality")
 	public void signin() throws Exception {
 
 		// Step 1: Go on Homepage...
@@ -21,20 +30,10 @@ public class SignIn_Page_082Test extends KalkiFashionBaseClass {
 
 		// Step 2: Click on Sigup link...
 		basepage.getKalkiFashionSignupLink().click();
-
 		LoginPage loginpage = new LoginPage(driver);
-		// Step 3: Enter valid email id...
-		loginpage.getEmailIdTextField().sendKeys(ReadData.fromPropertyFile("email"));
+		Assert.assertEquals(loginpage.getSignInLogo().getText(), ReadData.fromPropertyFile("sigInPageText"),
+				"SignIn button is not clicked");
 
-		// Step 4: click on Singin button...
-		loginpage.getSiginButton().click();
-
-		// Step 5: Enter valid password in password textfield...
-		loginpage.getPwdTextfield().sendKeys(ReadData.fromPropertyFile("password"));
-
-		// Step 6: click on sigin button...
-		loginpage.getSiginButton().click();
-
-		Reporter.log("User Siggned in succesfully...", true);
+		Reporter.log("User clicked on SignIn button successfully", true);
 	}
 }

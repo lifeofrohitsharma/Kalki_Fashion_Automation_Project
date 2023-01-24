@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.automation.addToCart.TC_Kalki_AddToCart_082Test">
+      <class name="org.automation.addToCart.TC_Kalki_AddToCart_089Test">
         <methods>
           <include name="browserSetup"/>
           <include name="browserTermination"/>
           <include name="clickOnimageDescription"/>
         </methods>
-      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_082Test -->
+      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_089Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -11,6 +11,9 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	@FindBy(xpath = "//h2[text()='Sign In']")
+	private WebElement signInPageTitle;
+
 	@FindBy(id = "email_id")
 	private WebElement emailIdTextField;
 
@@ -19,6 +22,24 @@ public class LoginPage {
 
 	@FindBy(id = "userpassword")
 	private WebElement pwdTextfield;
+
+	@FindBy(id = "userpassword_show")
+	private WebElement eyeIconPswTextField;
+
+	@FindBy(id = "use_mobile_instead")
+	private WebElement useMobileNoLink;
+
+	public WebElement getUseMobileNoLink() {
+		return useMobileNoLink;
+	}
+
+	public WebElement getSignInPageTitle() {
+		return signInPageTitle;
+	}
+
+	public WebElement getEyeIconPswTextField() {
+		return eyeIconPswTextField;
+	}
 
 	public WebElement getPwdTextfield() {
 		return pwdTextfield;
@@ -30,5 +51,9 @@ public class LoginPage {
 
 	public WebElement getEmailIdTextField() {
 		return emailIdTextField;
+	}
+
+	public WebElement getSignInLogo() {
+		return signInPageTitle;
 	}
 }
