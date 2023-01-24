@@ -1,53 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="10" passed="0" failed="8" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Empty Chrome Browser is launched Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Browser Window is maximized]]>
-    </line>
-    <line>
-      <![CDATA[Use Mobile Number button is working]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-01-24T17:20:11 IST" name="Default suite" finished-at="2023-01-24T17:20:21 IST" duration-ms="9536">
+  <suite started-at="2023-01-24T17:48:56 IST" name="Suite" finished-at="2023-01-24T17:48:58 IST" duration-ms="2155">
     <groups>
       <group name="functionality">
-        <method signature="SignIn_Page_090Test.signin()[pri:0, instance:org.automation.signIn.SignIn_Page_090Test@3c407114]" name="signin" class="org.automation.signIn.SignIn_Page_090Test"/>
+        <method signature="SignIn_Page_085Test.signin()[pri:0, instance:org.automation.signIn.SignIn_Page_085Test@61df66b6]" name="signin" class="org.automation.signIn.SignIn_Page_085Test"/>
+        <method signature="SignIn_Page_086Test.signin()[pri:0, instance:org.automation.signIn.SignIn_Page_086Test@188715b5]" name="signin" class="org.automation.signIn.SignIn_Page_086Test"/>
+        <method signature="SignIn_Page_087Test.signin()[pri:0, instance:org.automation.signIn.SignIn_Page_087Test@2f7298b]" name="signin" class="org.automation.signIn.SignIn_Page_087Test"/>
+        <method signature="SignIn_Page_088Test.signin()[pri:0, instance:org.automation.signIn.SignIn_Page_088Test@16ec5519]" name="signin" class="org.automation.signIn.SignIn_Page_088Test"/>
+        <method signature="SignIn_Page_090Test.signin()[pri:0, instance:org.automation.signIn.SignIn_Page_090Test@50eac852]" name="signin" class="org.automation.signIn.SignIn_Page_090Test"/>
+        <method signature="TC_Kalki_AddToCart_081Test.clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_081Test@1ea9f6af]" name="clickOnimageDescription" class="org.automation.addToCart.TC_Kalki_AddToCart_081Test"/>
+        <method signature="TC_Kalki_AddToCart_083Test.clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_083Test@5119fb47]" name="clickOnimageDescription" class="org.automation.addToCart.TC_Kalki_AddToCart_083Test"/>
+        <method signature="TC_Kalki_AddToCart_084Test.clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_084Test@6a192cfe]" name="clickOnimageDescription" class="org.automation.addToCart.TC_Kalki_AddToCart_084Test"/>
       </group> <!-- functionality -->
     </groups>
-    <test started-at="2023-01-24T17:20:11 IST" name="Default test" finished-at="2023-01-24T17:20:21 IST" duration-ms="9536">
-      <class name="org.automation.signIn.SignIn_Page_090Test">
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:org.automation.signIn.SignIn_Page_090Test@3c407114]" started-at="2023-01-24T17:20:11 IST" name="browserSetup" finished-at="2023-01-24T17:20:16 IST" duration-ms="4754" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-01-24T17:48:56 IST" name="Test" finished-at="2023-01-24T17:48:58 IST" duration-ms="2155">
+      <class name="org.automation.addToCart.TC_Kalki_AddToCart_084Test">
+        <test-method signature="clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_084Test@6a192cfe]" started-at="2023-01-24T17:48:57 IST" name="clickOnimageDescription" finished-at="2023-01-24T17:48:58 IST" duration-ms="1007" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+at org.automation.addToCart.TC_Kalki_AddToCart_084Test.clickOnimageDescription(TC_Kalki_AddToCart_084Test.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-            <line>
-              <![CDATA[Empty Chrome Browser is launched Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Browser Window is maximized]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method signature="signin()[pri:0, instance:org.automation.signIn.SignIn_Page_090Test@3c407114]" started-at="2023-01-24T17:20:16 IST" name="signin" finished-at="2023-01-24T17:20:20 IST" duration-ms="4195" status="PASS">
+        </test-method> <!-- clickOnimageDescription -->
+      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_084Test -->
+      <class name="org.automation.signIn.SignIn_Page_086Test">
+        <test-method signature="signin()[pri:0, instance:org.automation.signIn.SignIn_Page_086Test@188715b5]" started-at="2023-01-24T17:48:56 IST" name="signin" finished-at="2023-01-24T17:48:57 IST" duration-ms="1070" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+at org.automation.signIn.SignIn_Page_086Test.signin(SignIn_Page_086Test.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-            <line>
-              <![CDATA[Use Mobile Number button is working]]>
-            </line>
           </reporter-output>
         </test-method> <!-- signin -->
-        <test-method is-config="true" signature="browserTermination()[pri:0, instance:org.automation.signIn.SignIn_Page_090Test@3c407114]" started-at="2023-01-24T17:20:20 IST" name="browserTermination" finished-at="2023-01-24T17:20:21 IST" duration-ms="554" status="PASS">
+      </class> <!-- org.automation.signIn.SignIn_Page_086Test -->
+      <class name="org.automation.signIn.SignIn_Page_085Test">
+        <test-method signature="signin()[pri:0, instance:org.automation.signIn.SignIn_Page_085Test@61df66b6]" started-at="2023-01-24T17:48:56 IST" name="signin" finished-at="2023-01-24T17:48:57 IST" duration-ms="1070" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+at org.automation.signIn.SignIn_Page_085Test.signin(SignIn_Page_085Test.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserTermination -->
+        </test-method> <!-- signin -->
+      </class> <!-- org.automation.signIn.SignIn_Page_085Test -->
+      <class name="org.automation.signIn.SignIn_Page_087Test">
+        <test-method signature="signin()[pri:0, instance:org.automation.signIn.SignIn_Page_087Test@2f7298b]" started-at="2023-01-24T17:48:56 IST" name="signin" finished-at="2023-01-24T17:48:57 IST" duration-ms="1070" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+at org.automation.signIn.SignIn_Page_087Test.signin(SignIn_Page_087Test.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+      </class> <!-- org.automation.signIn.SignIn_Page_087Test -->
+      <class name="org.automation.signIn.SignIn_Page_088Test">
+        <test-method signature="signin()[pri:0, instance:org.automation.signIn.SignIn_Page_088Test@16ec5519]" started-at="2023-01-24T17:48:56 IST" name="signin" finished-at="2023-01-24T17:48:57 IST" duration-ms="1069" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+at org.automation.signIn.SignIn_Page_088Test.signin(SignIn_Page_088Test.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+      </class> <!-- org.automation.signIn.SignIn_Page_088Test -->
+      <class name="org.automation.addToCart.TC_Kalki_AddToCart_081Test">
+        <test-method signature="clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_081Test@1ea9f6af]" started-at="2023-01-24T17:48:57 IST" name="clickOnimageDescription" finished-at="2023-01-24T17:48:57 IST" duration-ms="34" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+at org.automation.addToCart.TC_Kalki_AddToCart_081Test.clickOnimageDescription(TC_Kalki_AddToCart_081Test.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnimageDescription -->
+      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_081Test -->
+      <class name="org.automation.signIn.SignIn_Page_090Test">
+        <test-method signature="signin()[pri:0, instance:org.automation.signIn.SignIn_Page_090Test@50eac852]" started-at="2023-01-24T17:48:56 IST" name="signin" finished-at="2023-01-24T17:48:57 IST" duration-ms="1070" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+at org.automation.signIn.SignIn_Page_090Test.signin(SignIn_Page_090Test.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
       </class> <!-- org.automation.signIn.SignIn_Page_090Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="org.automation.addToCart.TC_Kalki_AddToCart_083Test">
+        <test-method signature="clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_083Test@5119fb47]" started-at="2023-01-24T17:48:57 IST" name="clickOnimageDescription" finished-at="2023-01-24T17:48:58 IST" duration-ms="1015" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+at org.automation.addToCart.TC_Kalki_AddToCart_083Test.clickOnimageDescription(TC_Kalki_AddToCart_083Test.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnimageDescription -->
+      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_083Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
