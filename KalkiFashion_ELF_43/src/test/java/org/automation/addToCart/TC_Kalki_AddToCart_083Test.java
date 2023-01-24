@@ -11,16 +11,17 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+/***
+ * TC_Kalki_AddToCart_083Test: Verify user is able is click on the select size
+ * option on product list page.
+ * 
+ * @author Rohit
+ * 
+ * @throws InterruptedException
+ */
+
 public class TC_Kalki_AddToCart_083Test extends KalkiFashionBaseClass {
 
-	/***
-	 * TC_Kalki_AddToCart_083Test: Verify user is able is click on the select size
-	 * option on product list page.
-	 * 
-	 * @author Rohit
-	 * 
-	 * @throws InterruptedException
-	 */
 	@Test(groups = "functionality")
 	public void clickOnimageDescription() throws InterruptedException {
 		// Step 1: Go on Homepage...

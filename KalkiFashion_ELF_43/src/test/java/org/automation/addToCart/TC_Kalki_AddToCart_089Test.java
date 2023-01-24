@@ -11,15 +11,16 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+/***
+ * TC_Kalki_AddToCart_082Test: Verify user is able to remove the product from
+ * the shopping cart. button.
+ * 
+ * @author Rohit
+ * @throws InterruptedException
+ */
+
 public class TC_Kalki_AddToCart_089Test extends KalkiFashionBaseClass {
 
-	/***
-	 * TC_Kalki_AddToCart_082Test: Verify user is able is click on the Add To cart
-	 * button.
-	 * 
-	 * @author Rohit
-	 * @throws InterruptedException
-	 */
 	@Test(groups = "system")
 	public void clickOnimageDescription() throws InterruptedException {
 		// Step 1: Go on Homepage...

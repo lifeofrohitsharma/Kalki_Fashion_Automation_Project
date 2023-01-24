@@ -10,16 +10,17 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+/***
+ * TC_Kalki_AddToCart_084Test: Verify user is able is click on the image
+ * description available on Kids module page.
+ * 
+ * @author Rohit
+ * 
+ * @throws InterruptedException
+ */
+
 public class TC_Kalki_AddToCart_084Test extends KalkiFashionBaseClass {
 
-	/***
-	 * TC_Kalki_AddToCart_084Test: Verify user is able is click on the image
-	 * description available on Kids module page.
-	 * 
-	 * @author Rohit
-	 * 
-	 * @throws InterruptedException
-	 */
 	@Test(groups = "functionality")
 	public void clickOnimageDescription() throws InterruptedException {
 		// Step 1: Go on Homepage...

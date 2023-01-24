@@ -29,6 +29,13 @@ public class LoginPage {
 	@FindBy(id = "use_mobile_instead")
 	private WebElement useMobileNoLink;
 
+	@FindBy(id = "mobile_number")
+	private WebElement mobileNumberTextField;
+
+	public WebElement getMobileNumberTextField() {
+		return mobileNumberTextField;
+	}
+
 	public WebElement getUseMobileNoLink() {
 		return useMobileNoLink;
 	}

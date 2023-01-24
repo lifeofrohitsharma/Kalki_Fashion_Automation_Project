@@ -15,16 +15,17 @@ import org.openqa.selenium.io.FileHandler;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+/***
+ * SignIn_Page_088Test: verify that user is able to click on EyeIcon of Password
+ * Textfield.
+ * 
+ * @author Rohit
+ * 
+ * @throws Exception
+ */
+
 public class SignIn_Page_088Test extends KalkiFashionBaseClass {
 
-	/***
-	 * SignIn_Page_088Test: verify that user is able to click on EyeIcon of Password
-	 * Textfield.
-	 * 
-	 * @author Rohit
-	 * 
-	 * @throws Exception
-	 */
 	@Test(groups = "functionality")
 	public void signin() throws Exception {
 

@@ -8,15 +8,16 @@ import org.automation.genricLibrary.ReadData;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+/***
+ * SignIn_Page_086Test: verify that user is able to signin or not.
+ * 
+ * @author Rohit
+ * 
+ * @throws Exception
+ */
+
 public class SignIn_Page_086Test extends KalkiFashionBaseClass {
 
-	/***
-	 * SignIn_Page_086Test: verify that user is able to signin or not.
-	 * 
-	 * @author Rohit
-	 * 
-	 * @throws Exception
-	 */
 	@Test(groups = "functionality")
 	public void signin() throws Exception {
 

@@ -8,16 +8,17 @@ import org.automation.genricLibrary.ReadData;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+/***
+ * SignIn_Page_087Test verify that user is able to enter the data into emailid
+ * textfield or not.
+ * 
+ * @author Rohit
+ * 
+ * @throws Exception
+ */
+
 public class SignIn_Page_087Test extends KalkiFashionBaseClass {
 
-	/***
-	 * SignIn_Page_087Test verify that user is able to enter the data into emailid
-	 * textfield or not.
-	 * 
-	 * @author Rohit
-	 * 
-	 * @throws Exception
-	 */
 	@Test(groups = "functionality")
 	public void signin() throws Exception {
 
