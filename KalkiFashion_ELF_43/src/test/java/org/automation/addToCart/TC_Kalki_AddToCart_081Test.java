@@ -1,11 +1,12 @@
 package org.automation.addToCart;
 
-import org.automation.POM_repo.BasePage;
-import org.automation.genricLibrary.KalkiFashionBaseClass;
-import org.automation.genricLibrary.ReadData;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import genericLibrary.KalkiFashionBaseClass;
+import genericLibrary.ReadData;
+import pomRepository.BasePage;
 
 /***
  * TC_Kalki_AddToCart_081Test: Verify user is able is click on the kids button
@@ -18,7 +19,7 @@ import org.testng.annotations.Test;
 
 public class TC_Kalki_AddToCart_081Test extends KalkiFashionBaseClass {
 
-	@Test(groups = "functionality")
+	@Test(groups = "Functional")
 	public void clickOnimageDescription() throws InterruptedException {
 		// Step 1: Go on Homepage...
 		BasePage basepage = new BasePage(driver);

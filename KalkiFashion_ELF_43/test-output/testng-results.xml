@@ -8,18 +8,18 @@
       <![CDATA[Browser Window is maximized]]>
     </line>
     <line>
-      <![CDATA[Product added to Shopping cart succesfully]]>
+      <![CDATA[You are on Kids module Page]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-25T09:57:08 IST" name="Default suite" finished-at="2023-01-25T09:57:31 IST" duration-ms="22901">
+  <suite started-at="2023-01-25T14:26:38 IST" name="Default suite" finished-at="2023-01-25T14:26:46 IST" duration-ms="7890">
     <groups>
-      <group name="system">
-        <method signature="TC_Kalki_AddToCart_082Test.clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_082Test@3c407114]" name="clickOnimageDescription" class="org.automation.addToCart.TC_Kalki_AddToCart_082Test"/>
-      </group> <!-- system -->
+      <group name="Functional">
+        <method signature="TC_Kalki_AddToCart_081Test.clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_081Test@27ce24aa]" name="clickOnimageDescription" class="org.automation.addToCart.TC_Kalki_AddToCart_081Test"/>
+      </group> <!-- Functional -->
     </groups>
-    <test started-at="2023-01-25T09:57:08 IST" name="Default test" finished-at="2023-01-25T09:57:31 IST" duration-ms="22901">
-      <class name="org.automation.addToCart.TC_Kalki_AddToCart_082Test">
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_082Test@3c407114]" started-at="2023-01-25T09:57:09 IST" name="browserSetup" finished-at="2023-01-25T09:57:13 IST" duration-ms="4532" status="PASS">
+    <test started-at="2023-01-25T14:26:38 IST" name="Default test" finished-at="2023-01-25T14:26:46 IST" duration-ms="7890">
+      <class name="org.automation.addToCart.TC_Kalki_AddToCart_081Test">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_081Test@27ce24aa]" started-at="2023-01-25T14:26:38 IST" name="browserSetup" finished-at="2023-01-25T14:26:43 IST" duration-ms="4870" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,18 +36,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_082Test@3c407114]" started-at="2023-01-25T09:57:13 IST" name="clickOnimageDescription" finished-at="2023-01-25T09:57:31 IST" duration-ms="18075" status="PASS">
+        <test-method signature="clickOnimageDescription()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_081Test@27ce24aa]" started-at="2023-01-25T14:26:43 IST" name="clickOnimageDescription" finished-at="2023-01-25T14:26:45 IST" duration-ms="2423" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Product added to Shopping cart succesfully]]>
+              <![CDATA[You are on Kids module Page]]>
             </line>
           </reporter-output>
         </test-method> <!-- clickOnimageDescription -->
-        <test-method is-config="true" signature="browserTermination()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_082Test@3c407114]" started-at="2023-01-25T09:57:31 IST" name="browserTermination" finished-at="2023-01-25T09:57:31 IST" duration-ms="261" status="PASS">
+        <test-method is-config="true" signature="browserTermination()[pri:0, instance:org.automation.addToCart.TC_Kalki_AddToCart_081Test@27ce24aa]" started-at="2023-01-25T14:26:45 IST" name="browserTermination" finished-at="2023-01-25T14:26:46 IST" duration-ms="559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTermination -->
-      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_082Test -->
+      </class> <!-- org.automation.addToCart.TC_Kalki_AddToCart_081Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

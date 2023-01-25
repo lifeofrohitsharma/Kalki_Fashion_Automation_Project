@@ -1,10 +1,12 @@
 package org.automation.signIn;
 
 import org.testng.annotations.Test;
-import org.automation.POM_repo.BasePage;
-import org.automation.POM_repo.LoginPage;
-import org.automation.genricLibrary.KalkiFashionBaseClass;
-import org.automation.genricLibrary.ReadData;
+
+import genericLibrary.KalkiFashionBaseClass;
+import genericLibrary.ReadData;
+import pomRepository.BasePage;
+import pomRepository.LoginPage;
+
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -18,7 +20,7 @@ import org.testng.Reporter;
 
 public class SignIn_Page_086Test extends KalkiFashionBaseClass {
 
-	@Test(groups = "functionality")
+	@Test(groups = "Functional")
 	public void signin() throws Exception {
 
 		// Step 1: Go on Homepage...

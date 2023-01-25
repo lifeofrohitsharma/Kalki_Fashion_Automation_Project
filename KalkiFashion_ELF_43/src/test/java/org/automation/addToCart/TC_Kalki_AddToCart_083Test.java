@@ -2,14 +2,15 @@ package org.automation.addToCart;
 
 import java.util.Set;
 
-import org.automation.POM_repo.BasePage;
-import org.automation.POM_repo.KidsPage;
-import org.automation.genricLibrary.KalkiFashionBaseClass;
-import org.automation.genricLibrary.ReadData;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import genericLibrary.KalkiFashionBaseClass;
+import genericLibrary.ReadData;
+import pomRepository.BasePage;
+import pomRepository.KidsPage;
 
 /***
  * TC_Kalki_AddToCart_083Test: Verify user is able is click on the select size
@@ -22,7 +23,7 @@ import org.testng.annotations.Test;
 
 public class TC_Kalki_AddToCart_083Test extends KalkiFashionBaseClass {
 
-	@Test(groups = "functionality")
+	@Test(groups = "Functional")
 	public void clickOnimageDescription() throws InterruptedException {
 		// Step 1: Go on Homepage...
 		BasePage basepage = new BasePage(driver);

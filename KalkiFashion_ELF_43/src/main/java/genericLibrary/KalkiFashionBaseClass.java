@@ -1,4 +1,4 @@
-package org.automation.genricLibrary;
+package genericLibrary;
 
 import java.util.concurrent.TimeUnit;
 

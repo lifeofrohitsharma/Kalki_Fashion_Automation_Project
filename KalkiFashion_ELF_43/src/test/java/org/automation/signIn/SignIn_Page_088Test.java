@@ -2,12 +2,13 @@ package org.automation.signIn;
 
 import org.testng.annotations.Test;
 
+import genericLibrary.KalkiFashionBaseClass;
+import genericLibrary.ReadData;
+import pomRepository.BasePage;
+import pomRepository.LoginPage;
+
 import java.io.File;
 
-import org.automation.POM_repo.BasePage;
-import org.automation.POM_repo.LoginPage;
-import org.automation.genricLibrary.KalkiFashionBaseClass;
-import org.automation.genricLibrary.ReadData;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.interactions.Actions;
@@ -26,7 +27,7 @@ import org.testng.Reporter;
 
 public class SignIn_Page_088Test extends KalkiFashionBaseClass {
 
-	@Test(groups = "functionality")
+	@Test(groups = "Functional")
 	public void signin() throws Exception {
 
 		// Step 1: Go on Homepage...
