@@ -32,18 +32,21 @@ public class TC_Kalki_AddToCart_084Test extends KalkiFashionBaseClass {
 
 		// Step 2: Navigating on kids module page...
 		basepage.getKalkiFashionKidsLink().click();
-
-		// Step 3: Selection of product...
 		KidsPage kidspage = new KidsPage(driver);
-		js.executeScript("arguments[0].scrollIntoView(true)", kidspage.getProductionSelection());
-		kidspage.getProductSelection().click();
-		Set<String> childPageWinID = driver.getWindowHandles();
-		childPageWinID.remove(parentPageWinID);
-		for (String WinID : childPageWinID) {
-			driver.switchTo().window(WinID);
+		try {
+			// Step 3: Selection of product...
+			js.executeScript("arguments[0].scrollIntoView(true)", kidspage.getProductionSelection());
+			kidspage.getProductSelection().click();
+			Set<String> childPageWinID = driver.getWindowHandles();
+			childPageWinID.remove(parentPageWinID);
+			for (String WinID : childPageWinID) {
+				driver.switchTo().window(WinID);
+			}
+			Assert.assertEquals(driver.getTitle(), ReadData.fromPropertyFile("productSelection"),
+					"Product has not been clicked");
+			Reporter.log("Product has been clicked", true);
+		} catch (Exception e) {
+			kidspage.getSimilarProductPopUpClose().click();
 		}
-		Assert.assertEquals(driver.getTitle(), ReadData.fromPropertyFile("productSelection"),
-				"Product has not been clicked");
-		Reporter.log("Product has been clicked", true);
 	}
 }

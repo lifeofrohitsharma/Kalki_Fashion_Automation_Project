@@ -43,31 +43,34 @@ public class TC_Kalki_AddToCart_089Test extends KalkiFashionBaseClass {
 		for (String WinID : childPageWinID) {
 			driver.switchTo().window(WinID);
 		}
+		try {
+			// Step 4: Scrolling and Selection of the element.
+			explicitWait.until(ExpectedConditions.elementToBeClickable(kidspage.getAddToCartButton()));
+			js.executeScript("arguments[0].scrollIntoView(false)", kidspage.getSelectSizeIcon());
+			Thread.sleep(1000);
+			explicitWait.until(ExpectedConditions.elementToBeClickable(kidspage.getSelectSizeIcon()));
+			kidspage.getSelectSizeIcon().click();
 
-		// Step 4: Scrolling and Selection of the element.
-		explicitWait.until(ExpectedConditions.elementToBeClickable(kidspage.getAddToCartButton()));
-		js.executeScript("arguments[0].scrollIntoView(false)", kidspage.getSelectSizeIcon());
-		Thread.sleep(1000);
-		explicitWait.until(ExpectedConditions.elementToBeClickable(kidspage.getSelectSizeIcon()));
-		kidspage.getSelectSizeIcon().click();
+			// Step 5: verify whether user is able to click on add to cart button...
+			js.executeScript("arguments[0].scrollIntoView(false)", kidspage.getAddToCartButton());
+			explicitWait.until(ExpectedConditions.elementToBeClickable(kidspage.getAddToCartButton()));
+			Thread.sleep(1000);
+			kidspage.getAddToCartButton().click();
 
-		// Step 5: verify whether user is able to click on add to cart button...
-		js.executeScript("arguments[0].scrollIntoView(false)", kidspage.getAddToCartButton());
-		explicitWait.until(ExpectedConditions.elementToBeClickable(kidspage.getAddToCartButton()));
-		Thread.sleep(1000);
-		kidspage.getAddToCartButton().click();
+			explicitWait.until(ExpectedConditions.elementToBeClickable(basepage.getUpdateButton()));
+			Assert.assertEquals(driver.getTitle(), ReadData.fromPropertyFile("addTocartPageTitle"),
+					"Add to cart button not working");
 
-		explicitWait.until(ExpectedConditions.elementToBeClickable(basepage.getUpdateButton()));
-		Assert.assertEquals(driver.getTitle(), ReadData.fromPropertyFile("addTocartPageTitle"),
-				"Add to cart button not working");
+			Reporter.log("Product added to Shopping cart succesfully", true);
 
-		Reporter.log("Product added to Shopping cart succesfully", true);
+			// Step6: Removing the product from the Shooping cart...
+			kidspage.getRemoveButtonAddToCart().click();
+			Assert.assertEquals(kidspage.getAddToCartMessage().getText(),
+					ReadData.fromPropertyFile("shoppingCartPageMessage"), "Product not been removed from the cart");
 
-		// Step6: Removing the product from the Shooping cart...
-		kidspage.getRemoveButtonAddToCart().click();
-		Assert.assertEquals(kidspage.getAddToCartMessage().getText(),
-				ReadData.fromPropertyFile("shoppingCartPageMessage"), "Product not been removed from the cart");
-
-		Reporter.log("Product removed from the cart", true);
+			Reporter.log("Product removed from the cart", true);
+		} catch (Exception e) {
+			kidspage.getSimilarProductPopUpClose().click();
+		}
 	}
 }

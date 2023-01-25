@@ -17,10 +17,6 @@ public class BasePage {
 	@FindBy(xpath = "//button[text()='Update Cart']")
 	private WebElement updateButton;
 
-	public WebElement getUpdateButton() {
-		return updateButton;
-	}
-
 	@FindBy(xpath = "//span[text()='Sign in / SignUp']")
 	private WebElement kalkiFashionSignupLink;
 
@@ -65,6 +61,10 @@ public class BasePage {
 
 	@FindBy(xpath = "(//a[text()=' Sale '])[2]")
 	private WebElement kalkiFashionSaleLink;
+
+	public WebElement getUpdateButton() {
+		return updateButton;
+	}
 
 	public WebElement getKalkiFashionHomePageLink() {
 		return kalkiFashionHomePageLink;
